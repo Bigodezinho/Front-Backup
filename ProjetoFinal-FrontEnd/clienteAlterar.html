@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro Empreiteira</title>
+</head>
+
+<nav>
+            
+    <div class="logo">
+        <a href="cliente.html"> Empreiteira </a>
+        
+    </div>
+    
+    <ul class="menuP">
+        <li> <a href="cliente.html"> Cliente </a> </li>
+        <li> <a href="Funcionario.html"> Funcionário </a> </li>
+        <li> <a href="obra.html"> Obra </a> </li>
+        <li> <a href="os.html"> Os </a> </li>
+    </ul>
+
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        
+    </ul>
+
+    <ul>
+        <li> <a href="index.html"> Entrar </a> </li>
+        <li> <a href="cadastro.html"> Funcionalidades </a> </li>
+        <li> <a href="contato.html"> Contato </a> </li>
+    </ul>
+
+    
+
+</nav>
+
+<body>
+    <div class="div-1">
+    <!-- CLIENTE -->
+        <div id="alterar-cliente" class="ocultar">
+            <h1>Alterar Cliente</h1>
+            <br>
+            <div class="input-group row justify-content-center">
+                <label for="cliente-id-alterar">ID</label>
+                <input type="text" class="form-control col-4 input-group"  id="cliente-id-alterar" readonly>
+            </div>
+            <label for="cliente-nome-alterar">Nome:</label>
+            <input type="text" id="cliente-nome-alterar" />
+            <label for="cliente-cnpj-alterar">CNPJ:</label>
+            <input type="text" id="cliente-cnpj-alterar" />
+            <label for="cliente-telefone-alterar">Telefone:</label>
+            <input type="text" id="cliente-telefone-alterar" />
+            <div class="centro">
+                <input type="button" value="Alterar Cliente" onclick="handlerAlterarCliente()" />
+                <input type="button" value="Cancelar" onclick="toogleAlterarCliente()" />
+                <input type="button" value="Deletar" onclick="handlerDeleteCliente()" />
+            </div>
+        </div>
+    </div>
+    <table id="tabela-clientes" class="mostrar">
+        <thead>
+            <tr>
+                <th>
+                    ID
+                </th>
+                <th>
+                    Nome
+                </th>
+                <th>
+                    CNPJ
+                </th>
+                <th>
+                    Telefone
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="tabela-clientes-body">
+
+        </tbody>
+    </table>
+    </div>
+
+
+ 
+        </div>
+
+    <script src="jquery.js"></script>    
+    <script src="utils.js"></script>
+    <script src="request.js"></script>
+    <script src="cliente.js"></script>
+    <script src="clienteAlterar.js"></script>
+    <script src="funcionario.js"></script>
+    <script src="obra.js"></script>
+    <script src="OS.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</body>
+
+</html>

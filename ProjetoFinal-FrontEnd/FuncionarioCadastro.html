@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro Empreiteira</title>
+</head>
+
+<nav>
+            
+    <div class="logo">
+        <a href="Funcionario.html"> Empreiteira </a>
+        
+    </div>
+    
+    <ul class="menuP">
+        <li> <a href="cliente.html"> Cliente </a> </li>
+        <li> <a href="Funcionario.html"> Funcionário </a> </li>
+        <li> <a href="obra.html"> Obra </a> </li>
+        <li> <a href="os.html"> Os </a> </li>
+    </ul>
+
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        
+    </ul>
+
+    <ul>
+        <li> <a href="index.html"> Entrar </a> </li>
+        <li> <a href="cadastro.html"> Funcionalidades </a> </li>
+        <li> <a href="contato.html"> Contato </a> </li>
+    </ul>
+
+    
+
+</nav>
+
+<body>
+    <div name="formulario-funcionario" id="form-funcionario" class="formularios">
+        <!-- Jeito correto de se fazer a semântica do HTML -->
+        <br>
+        <h1>Cadastrar Funcionário</h1>
+        <br>
+
+        <label for="funcionario-nome">Nome:</label>
+        <input type="text" id="funcionario-nome" />
+        <label for="funcionario-cpf">CPF:</label>
+        <input type="text" id="funcionario-cpf" />
+        <label for="funcionario-cargo">Cargo:</label>
+        <input type="text" id="funcionario-cargo" />
+        <div class="centro">
+            <input type="button" value="Salvar Funcionário" onclick="handlerSalvarFuncionario()" />
+        </div>
+    </div>
+    <table id="tabela-funcionarios" class="mostrar">
+        <thead>
+            <tr>
+                <th>
+                    ID
+                </th>
+                <th>
+                    Nome
+                </th>
+                <th>
+                    CPF
+                </th>
+                <th>
+                    Cargo
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="tabela-funcionarios-body">
+
+        </tbody>
+    </table>
+    </div>
+
+
+    <script src="jquery.js"></script>
+    
+    <script src="utils.js"></script>
+    <script src="request.js"></script>
+    <script src="cliente.js"></script>
+    <script src="funcionario.js"></script>
+    <script src="obra.js"></script>
+    <script src="OS.js"></script>
+</body>
+
+</html>
